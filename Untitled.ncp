@@ -1,0 +1,198 @@
+<Project>
+  <Name>Untitled</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Untitled</Name>
+    <Language>Java</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Parque</Name>
+        <Access>Public</Access>
+        <Location left="1107" top="744" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String tipo</Member>
+        <Member type="Field">private float preco</Member>
+        <Member type="Field">private String nome</Member>
+        <Member type="Field">private int numLugares</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Administrador</Name>
+        <Access>Public</Access>
+        <Location left="572" top="744" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Seguranca</Name>
+        <Access>Public</Access>
+        <Location left="303" top="744" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Viatura</Name>
+        <Access>Public</Access>
+        <Location left="1359" top="441" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String matricula</Member>
+        <Member type="Field">private String combustivel</Member>
+        <Member type="Field">private String modelo</Member>
+        <Member type="Field">private String marca</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Utilizador</Name>
+        <Access>Public</Access>
+        <Location left="572" top="441" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private String username</Member>
+        <Member type="Field">private String password</Member>
+        <Member type="Field">private String nome</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Utente</Name>
+        <Access>Public</Access>
+        <Location left="847" top="744" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Viatura viatura</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ListaParques</Name>
+        <Access>Public</Access>
+        <Location left="1359" top="744" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ArrayList&lt;Parque&gt; listaParques</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ListaUtilizador</Name>
+        <Access>Public</Access>
+        <Location left="847" top="441" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private HashMap&lt;String,Utilizador&gt; listaUtilizador</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>EntradaSaida</Name>
+        <Access>Public</Access>
+        <Location left="303" top="441" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private LocalDate dataEntrada</Member>
+        <Member type="Field">private LocalDate dataSaida</Member>
+        <Member type="Field">private Viatura viatura</Member>
+        <Member type="Field">private Parque parque</Member>
+        <Member type="Field">private LocalDate horaEntrada</Member>
+        <Member type="Field">private LocalDate horaSaida</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ListaViaturas</Name>
+        <Access>Public</Access>
+        <Location left="1107" top="441" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private HashMap &lt;String,Viatura&gt; listaViaturas</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ListaPedidos</Name>
+        <Access>Public</Access>
+        <Location left="1574" top="744" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ArrayList&lt;PedidoAcesso&gt; listaPedidos</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>PedidoAcesso</Name>
+        <Access>Public</Access>
+        <Location left="1574" top="441" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private Parque parque</Member>
+        <Member type="Field">private Utente utente</Member>
+        <Member type="Field">private String estado</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ListaControlo</Name>
+        <Access>Public</Access>
+        <Location left="303" top="186" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ArrayList &lt;EntradaSaida&gt; listaControlo</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Aplicacao</Name>
+        <Access>Public</Access>
+        <Location left="570" top="186" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private ListaUtilizador listaUtilizador</Member>
+        <Member type="Field">private ListaViaturas listaViaturas</Member>
+        <Member type="Field">private ListaParques listaParques</Member>
+        <Member type="Field">private ListaPedidos listaPedidos</Member>
+        <Member type="Field">private ListControlo listaControlo</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Generalization" first="2" second="4">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="1" second="4">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="5" second="4">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Association" first="6" second="0">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="9" second="3">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="7" second="4">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="12" second="8">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="10" second="11">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
